@@ -1,0 +1,25 @@
+
+type Query {
+    getAllStudents:[Student]
+    getStudentById(id: ID!): Student
+    getAllCourses:[Course]
+    getCourseById(id: ID!): Course
+    test: String
+}
+
+type Student {
+    student_id: ID
+    first_name: String
+    last_name: String
+    email: String
+    age: Int
+    dob: String
+}
+
+type Course {
+    course_id: ID
+    course_name: String
+    description: String
+    start: String
+    finish: String
+}
